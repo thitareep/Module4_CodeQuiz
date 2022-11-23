@@ -1,7 +1,18 @@
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
 
 header {
-    background: rgb(192, 132, 252);
+    background:black;
+    color: white;
 }
+
 main {
     background: linear-gradient(to top, rgb(165, 180, 252), rgb(192, 132, 252));
+}
+
+img {
+    max-width: 200px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
