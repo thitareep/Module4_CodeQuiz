@@ -4,12 +4,13 @@
 }
 
 header {
-    background:black;
+    background: black;
     color: white;
 }
 
-main {
+body {
     background: linear-gradient(to top, rgb(165, 180, 252), rgb(192, 132, 252));
+    background-attachment: fixed;
 }
 
 img {
@@ -22,6 +23,25 @@ li{
     list-style: none;
 }
 
-.quiz-questions {
+.quiz-questions, .answer-check, .summary, .high-scores {
     display: none;
+}
+
+h2 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+.choice-btn, .submit-btn, .clear-btn, .back-btn {
+    background-color: rgb(171, 95, 218);
+    color: white;
+    border: none;
 }
