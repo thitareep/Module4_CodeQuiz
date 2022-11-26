@@ -27,6 +27,7 @@ var questionBank = [
     }
 ];
 
+// For Questions //  
 var questionEl = document.querySelector('question');
 var choice1 = document.querySelector('.choice1');
 var choice2 = document.querySelector('.choice2');
@@ -39,4 +40,71 @@ function renderQuestion(questionCount) {
     choice2.innerHTML = questionBank[questionCount].choices[1];
     choice3.innerHTML = questionBank[questionCount].choices[2];
     choice4.innerHTML = questionBank[questionCount].choices[3];
+};
+
+// For Timer //  
+var secondsLeft = 75;
+var timer = document.querySelector('.timer');
+var timeOver =document.querySelector('.time-up');
+
+function setTimer() {
+    var timerInterval = setInterval(function() {
+        secondsLeft--;
+        timer.textContent = 'Time: ' + secondsLeft + 's';
+
+        if (secondsLeft == 0) {
+                    clearInterval(timerInterval);
+                    timerOver.textContent = "Time is up!";
+                    gameOver();
+        } else if(questionCount >= questionBank.length) {
+            clearInterval(timerInterval);
+            gameOver();
+        }
+    }, 1000);
+};
+
+var startBtn = document.querySelector('.startBtn');
+var instructions = document.querySelector('.instructions');
+var quiz = document.querySelector('.quiz-questions');
+
+startBtn.addEventListener('click', function renderQuiz() { 
+    instructions.style.display = 'none';
+    quiz.style.display = 'block';
+    questionNumber = 0
+    renderQuestion(questionNumber);
+    timeOver.style.display = 'block'
+    setTimer();
+});
+
+// To display whether answer was correct or wrong //
+var answerCheck = document.querySelector('.answer-check');
+var correctAnswer = document.querySelector('.correct-answer');
+var wrongAnswer = document.querySelector('.wrong-answer');
+
+function checkAnswer(event) {
+    event.preventDefault();
+    answerCheck.style.display = 'block';
+    console.log(event.target.innerHTML)
+    console.log(questionBank[questionNumber].answer)
+
+    setTimeout(function () {
+        answerCheck.style.display = 'none';
+    }, 3000);
+
+    if (event.target.innerHTML. === questionBank[questionNumber].answer) {
+        correctAnswer.style.display = 'block';
+        wrongAnswer.style.display = 'none';
+    } else {
+        correctAnswer.style.display = 'none';
+        wrongAnswer.style.display = 'block';
+        secondsLeft = secondsLeft - 10;
+    };
+
+    questionNumber++
+
+    if (questionNumber < questionBank.length) {
+        renderQuestion(questionNumber);
+    } else {
+        gameOver();
+    };
 };

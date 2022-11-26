@@ -15,4 +15,13 @@ main {
 img {
     max-width: 200px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.quiz-questions {
+    display: none;
 }
