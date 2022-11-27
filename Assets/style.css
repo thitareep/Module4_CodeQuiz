@@ -1,0 +1,50 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header (View High Scores & Timer) styling */
+header {
+    background: black;
+    color: white;
+}
+
+/* Styling for background */
+body {
+    background: linear-gradient(to right, rgb(165, 180, 252), rgb(192, 132, 252));
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 300px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.quiz-questions, .answer-check, .summary, .high-scores {
+    display: none;
+}
+
+h2 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+/* Styling for buttons and quiz answer selections */
+.start-btn, .choice-btn, .submit-btn, .clear-btn, .back-btn {
+    background-color: rgb(171, 95, 218);
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

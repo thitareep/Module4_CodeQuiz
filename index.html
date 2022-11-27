@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mod 4 | Code Quiz</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS Linked -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Score & Timer in Header -->
+    <header>
+        <!-- Bootstrap container -->
+        <div class="container-fluid py-3">
+            <div class="row">
+                <!-- View Highscores -->
+                <div class="col text-start">
+                    <h4 class="view-high-scores">View High Scores</h4>
+                </div>
+                <!-- View Timer -->
+                <div class="col text-end">
+                    <h4 class="timer">Timer</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Content Goes Here -->
+    <!-- Bootstrap container -->
+    <div class="container-fluid align-items-center justify-content-center">
+        <div class="col-pd-8">
+            <!-- Introduction/Start Section -->
+            <div class="p-2 instructions">
+                <h1 class="text-center p-3">Coding Quiz</h1>
+                <p class="text-center mb-3 mx-4 p-2 fst-italic">Welcome! This timed quiz begins once you click start.
+                    It's over once the timer reaches 0 or all the questions have been answered.
+                    However, there is a penalty of -10 seconds for every incorrect answer.
+                    Remember to save your intials and score once you're done! Good luck!~ </p>
+                <div class="col text-center m-2">
+                    <button type="button" class="start-btn m-2 rounded">Start Quiz!</button>
+                </div>
+                <div class="col text-center">
+                    <img src="https://media.tenor.com/JJmdqVhGoewAAAAC/anime-typing.gif" class="img rounded m-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Questions section -->
+    <div class="container-fluid align-items-center quiz-questions m-3">
+        <h2 class="question text-center"></h2>
+        <ul class="text-center">
+            <li><button class="choice-btn choice1 m-2 rounded"></button></li>
+            <li><button class="choice-btn choice2 m-2 rounded"></button></li>
+            <li><button class="choice-btn choice3 m-2 rounded"></button></li>
+            <li><button class="choice-btn choice4 m-2 rounded"></button></li>
+        </ul>
+    </div>
+
+    <!-- Summary after finishing quiz -->
+    <div class="container-fluid justify-content-center m-3 summary">
+        <h2 class="time-up text-center">All Done!</h2>
+        <p class="final-score text-center"></p>
+        <p class="text-center">Enter initials: <input id="initials"><button
+                class="submit-btn rounded m-1">Submit</button></p>
+    </div>
+
+    <!-- Answer choice check: Right or Wrong -->
+    <div class="container-fluid justify-content-center m-3 answer-check">
+        <!-- Display for correct answer -->
+        <div class="correct-answer text-center">
+            <h3 class="text-center">CORRECT!</h3>
+            <img src="./Assets/images/correct.gif" class="img rounded my-2">
+        </div>
+
+        <!-- Display for wrong answer -->
+        <div class="wrong-answer text-center">
+            <h3 class="text-center">Wrong Answer...</h3>
+            <img src="./Assets/images/incorrect.gif" class="img rounded my-2">
+        </div>
+    </div>
+
+    <!-- View High Scores & Go Back -->
+    <div class="container justify-content-center">
+        <div class="high-scores text-center m-3">
+            <h2>High Scores</h2>
+            <ul class="high-score-list"></ul>
+            <button class="back-btn m-2 rounded">Go Back</button>
+            <button class="clear-btn m-2 rounded">Clear High Scores</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>
