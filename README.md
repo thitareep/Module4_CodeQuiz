@@ -6,17 +6,17 @@ This is the completed application of the Module 4 Web APIs Challenge Code Quiz. 
 
 ## Screeshots:
 Intro/Instructions Display
-![Alt text](../../../../../../C:/Users/thita/bootcamp/Challenge4_Resub/Module4_CodeQuiz/Assets/images/Quiz_Intro.png)
+![Alt text](https://github.com/thitareep/Module4_CodeQuiz/blob/main/Assets/images/Quiz_Intro.png?raw=true)
 
 Quiz: Correct/Incorrect Answer Display
-![screenshot](../../../../../../C:/Users/thita/bootcamp/Challenge4_Resub/Module4_CodeQuiz/Assets/images/Quiz_Correct.png)
-![screenshot](../../../../../../C:/Users/thita/bootcamp/Challenge4_Resub/Module4_CodeQuiz/Assets/images/Quiz_Incorrect.png)
+![screenshot](https://github.com/thitareep/Module4_CodeQuiz/blob/main/Assets/images/Quiz_Correct.png?raw=true)
+![screenshot](https://github.com/thitareep/Module4_CodeQuiz/blob/main/Assets/images/Quiz_Incorrect.png?raw=true)
 
 Quiz Complete/Submit Display
-![screenshot](../../../../../../C:/Users/thita/bootcamp/Challenge4_Resub/Module4_CodeQuiz/Assets/images/Quiz_Submit.png)
+![screenshot](https://github.com/thitareep/Module4_CodeQuiz/blob/main/Assets/images/Quiz_Submit.png?raw=true)
 
 High Score List Display:
-![screenshot](../../../../../../C:/Users/thita/bootcamp/Challenge4_Resub/Module4_CodeQuiz/Assets/images/Quiz_Highscores.png)
+![screenshot](https://github.com/thitareep/Module4_CodeQuiz/blob/main/Assets/images/Quiz_Highscores.png?raw=true)
 
 ## Deployed Link:
 https://thitareep.github.io/Module4_CodeQuiz/
