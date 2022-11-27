@@ -1,20 +1,21 @@
 *{
     font-family: 'Roboto', sans-serif;
-
 }
 
+/* Header (View High Scores & Timer) styling */
 header {
     background: black;
     color: white;
 }
 
+/* Styling for background */
 body {
-    background: linear-gradient(to top, rgb(165, 180, 252), rgb(192, 132, 252));
+    background: linear-gradient(to right, rgb(165, 180, 252), rgb(192, 132, 252));
     background-attachment: fixed;
 }
 
 img {
-    max-width: 200px;
+    max-width: 300px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     align-items: center;
 }
@@ -40,8 +41,10 @@ h4 {
     font-size: 15px;
 }
 
-.choice-btn, .submit-btn, .clear-btn, .back-btn {
+/* Styling for buttons and quiz answer selections */
+.start-btn, .choice-btn, .submit-btn, .clear-btn, .back-btn {
     background-color: rgb(171, 95, 218);
     color: white;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
